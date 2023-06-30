@@ -17,7 +17,13 @@ Mini E-Commerce, branded as ClickCommerce, is an application designed to facilit
 The Mini E-Commerce (ClickCommerce) application offers the following features:
 
 - **Authentication**: Users can create accounts and log in to access the full functionality of the application.
-- **Authorization**: The application distinguishes between regular users and administrators, each with their respective privileges.
+- **Authorization**: The application distinguishes between regular users and administrators, each with their respective
+- **Laravel Livewire**
+- **Laravel Vite**
+- **Add To Cart**
+- **Payment Gateway Simulation With Midtrans https://docs.midtrans.com/docs/testing-payment-on-sandbox**
+  
+privileges.
 - **Login/Register**: Users can create new accounts or log in with existing credentials.
 - **Regular User Privileges**:
   - Add products to the cart.
