@@ -25,6 +25,10 @@ Aplikasi Mini E-Commerce (ClickCommerce) menawarkan fitur-fitur berikut:
   - Mensimulasikan proses gateway pembayaran untuk tujuan pengujian.
 - **Hak Akses Admin**:
   - Akses ke halaman khusus admin untuk mengelola stok produk dengan fitur CRUD (Create, Read, Update, Delete).
+- **Laravel Livewire**
+- **Laravel Vite**
+- **Add To Cart**
+- **Simulasi Payment Gateway Dengan Midtrans https://docs.midtrans.com/docs/testing-payment-on-sandbox**
 
 ## 3. Peran Pengguna
 Aplikasi Mini E-Commerce (ClickCommerce) mendefinisikan dua peran pengguna:
