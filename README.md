@@ -20,7 +20,6 @@ The Mini E-Commerce (ClickCommerce) application offers the following features:
 - **Authorization**: The application distinguishes between regular users and administrators, each with their respective
 - **Laravel Livewire**
 - **Laravel Vite**
-- **Add To Cart**
 - **Payment Gateway Simulation With Midtrans https://docs.midtrans.com/docs/testing-payment-on-sandbox**
   
 privileges.
