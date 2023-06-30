@@ -1,0 +1,111 @@
+/* Body Style */
+body {
+    background-color: #F0F2F5;
+    font-family: 'Poppins';
+
+}
+
+/* -------------- Global Style --------------------------- */
+.text-limit {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    word-wrap: break-word;
+    width: 100%;
+}
+
+.center-cropped {
+    object-fit: fill;
+    /* Do not scale the image */
+    /* object-position: center; */
+    /* Center the image within the element */
+    height: 150px;
+    width: 150px;
+}
+.show-center-cropped {
+    object-fit: fill;
+    height: 300px;
+    width: 300px;
+}
+
+a .text-decoration-none {
+    text-decoration: none;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #FFA500;
+    color: white;
+}
+
+.dropdown-menu .active-button {
+    background-color: #FFA500;
+    color: white;
+}
+
+/*--------------- Full Style Login Page -------------------*/
+#page-login {
+    background-image: url('/img/login-bg.jpg');
+    background-repeat: no-repeat;
+}
+
+#page-login h1 {
+    color: #FFA500;
+    font-weight: bold;
+    /* margin-bottom: 20px; */
+}
+
+#page-login #forget-password {
+    font-size: smaller;
+}
+
+/*------------------- Full Style Home Page -------------------*/
+/* Carousel */
+.carousel-inner img {
+    margin: auto;
+}
+
+#card {
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+    transition-property: box-shadow;
+    transition-duration: 350ms;
+}
+
+/* #card:hover {
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.2);
+}
+
+#card:not(:hover){
+    transition-property: box-shadow;
+    transition-duration: 350ms;
+    box-shadow: none;
+} */
+
+/* ------ Dashboard Style --------- */
+aside .side:hover {
+    background-color: #FFA500;
+    color: black;
+    transition: 200ms;
+}
+
+aside .link {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+
+.sidebar-active {
+    background-color: #FFA500;
+    color: black;
+}
+
+.sidebar {
+    height: 100vh;
+}
+
+.main-content {
+    height: 100vh;
+    overflow-y: scroll;
+}
