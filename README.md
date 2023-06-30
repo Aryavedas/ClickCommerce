@@ -1,109 +1,104 @@
 # Mini E-Commerce (ClickCommerce) - README
-README ini memberikan gambaran tentang aplikasi Mini E-Commerce yang dikembangkan dengan merek ClickCommerce. Aplikasi ini dibangun menggunakan framework Laravel dan mencakup beberapa fitur, termasuk autentikasi, otorisasi, login, dan registrasi.
 
-Daftar Isi
-Pendahuluan
-Fitur
-Peran Pengguna
-Prasyarat
-Instalasi
-Penggunaan
-Kontribusi
-Lisensi
-Pendahuluan
-Mini E-Commerce, yang menggunakan merek ClickCommerce, adalah aplikasi yang dirancang untuk memfasilitasi belanja online. Aplikasi ini menyediakan antarmuka yang mudah digunakan bagi pengguna untuk menjelajahi dan membeli produk. Aplikasi ini dibangun dengan menggunakan framework Laravel, yang menjamin pengalaman pengembangan yang kuat dan efisien.
+## Table of Contents
+1. [Introduction](#1-introduction)
+2. [Features](#2-features)
+3. [User Roles](#3-user-roles)
+4. [Prerequisites](#4-prerequisites)
+5. [Installation](#5-installation)
+6. [Usage](#6-usage)
+7. [Contributing](#7-contributing)
+8. [License](#8-license)
 
-Fitur
-Aplikasi Mini E-Commerce (ClickCommerce) menawarkan fitur-fitur berikut:
+## 1. Introduction
+Mini E-Commerce, branded as ClickCommerce, is an application designed to facilitate online shopping. It provides a user-friendly interface for users to explore and purchase products. The application is built on the Laravel framework, ensuring a robust and efficient development experience.
 
-Autentikasi: Pengguna dapat membuat akun dan melakukan login untuk mengakses seluruh fungsionalitas aplikasi.
-Otorisasi: Aplikasi membedakan antara pengguna biasa dan administrator, masing-masing dengan hak aksesnya sendiri.
-Login/Register: Pengguna dapat membuat akun baru atau melakukan login dengan kredensial yang sudah ada.
-Hak Akses Pengguna Biasa:
-Menambahkan produk ke keranjang.
-Menelusuri dan melihat produk yang tersedia.
-Mensimulasikan proses gateway pembayaran.
-Hak Akses Admin:
-Akses ke halaman khusus admin untuk mengelola stok produk dengan fitur CRUD (Create, Read, Update, Delete).
-Peran Pengguna
-Aplikasi Mini E-Commerce (ClickCommerce) mendefinisikan dua peran pengguna:
+## 2. Features
+The Mini E-Commerce (ClickCommerce) application offers the following features:
 
-Pengguna Biasa: Peran ini mewakili pengguna umum aplikasi yang dapat menjelajahi dan membeli produk.
-Admin: Peran ini secara khusus diberikan kepada administrator yang memiliki hak akses tambahan untuk mengelola stok produk.
-Prasyarat
-Untuk menjalankan aplikasi Mini E-Commerce (ClickCommerce) secara lokal, pastikan Anda memiliki prasyarat berikut terpasang:
+- **Authentication**: Users can create accounts and log in to access the full functionality of the application.
+- **Authorization**: The application distinguishes between regular users and administrators, each with their respective privileges.
+- **Login/Register**: Users can create new accounts or log in with existing credentials.
+- **Regular User Privileges**:
+  - Add products to the cart.
+  - Browse and view available products.
+  - Simulate the payment gateway process.
+- **Admin Privileges**:
+  - Access to an exclusive admin stock manager page with CRUD (Create, Read, Update, Delete) functionality for products.
 
-PHP (>= 7.3)
-Composer
-Laravel (>= 8.x)
-Database (misalnya MySQL, PostgreSQL, SQLite)
-Instalasi
-Ikuti langkah-langkah berikut untuk mengatur aplikasi:
+## 3. User Roles
+The Mini E-Commerce (ClickCommerce) application defines two user roles:
 
-Clone repositori ke mesin lokal Anda:
+1. **Regular User**: This role represents the general users of the application who can browse and purchase products.
+2. **Admin**: This role is specifically assigned to administrators who have additional privileges to manage the product stock.
 
-shell
-Copy code
+## 4. Prerequisites
+To run the Mini E-Commerce (ClickCommerce) application locally, ensure that you have the following prerequisites installed:
+
+- PHP (>= 7.3)
+- Composer
+- Laravel (>= 8.x)
+- Database (e.g., MySQL, PostgreSQL, SQLite)
+
+## 5. Installation
+Follow these steps to set up the application:
+
+1. Clone the repository to your local machine:
 git clone https://github.com/your-username/mini-ecommerce.git
-Masuk ke direktori proyek:
 
-shell
-Copy code
+
+2. Navigate to the project directory:
 cd mini-ecommerce
-Pasang dependensi menggunakan Composer:
 
-shell
-Copy code
+
+3. Install the dependencies using Composer:
 composer install
-Buat salinan file .env.example dan ubah namanya menjadi .env:
 
-shell
-Copy code
+
+4. Create a copy of the `.env.example` file and rename it to `.env`:
 cp .env.example .env
-Generate kunci aplikasi:
 
-shell
-Copy code
+
+5. Generate the application key:
 php artisan key:generate
-Konfigurasi pengaturan database di file .env sesuai dengan lingkungan Anda.
 
-Jalankan migrasi database:
 
-shell
-Copy code
+6. Configure the database settings in the `.env` file according to your environment.
+
+7. Run the database migrations:
 php artisan migrate
-Opsional: Isi database dengan data contoh:
 
-shell
-Copy code
+
+8. Optionally, seed the database with sample data:
 php artisan db:seed
-Jalankan aplikasi:
 
-shell
-Copy code
+
+9. Serve the application:
 php artisan serve
-Akses aplikasi dengan membuka http://localhost:8000 di peramban web Anda.
 
-Penggunaan
-Setelah aplikasi berjalan, Anda dapat melakukan tugas-tugas berikut berdasarkan peran pengguna:
 
-Pengguna Biasa:
+10. Access the application by visiting `http://localhost:8000` in your web browser.
 
-Buat akun atau login dengan kredensial yang sudah ada.
-Jelajahi dan lihat produk yang tersedia.
-Tambahkan produk yang diinginkan ke dalam keranjang.
-Simulasikan proses gateway pembayaran untuk tujuan pengujian.
-Admin:
+## 6. Usage
+Once the application is up and running, you can perform the following tasks based on your user role:
 
-Login dengan kredensial admin.
-Akses halaman admin stock manager.
-Lakukan operasi CRUD (Create, Read, Update, Delete) pada produk:
-Buat produk baru.
-Baca produk yang sudah ada.
-Perbarui detail produk.
-Hapus produk.
-Kontribusi
-Kontribusi untuk aplikasi Mini E-Commerce (ClickCommerce) sangat diterima. Jika Anda menemui masalah atau memiliki saran untuk perbaikan, silakan ajukan sebagai masalah GitHub di repositori ini. Anda juga dapat melakukan fork repositori dan membuat pull request untuk fitur baru atau perbaikan bug.
+- **Regular User**:
+- Create an account or log in with existing credentials.
+- Browse and view the available products.
+- Add desired products to the cart.
+- Simulate the payment gateway process for testing purposes.
 
-Lisensi
-Aplikasi Mini E-Commerce (ClickCommerce) adalah perangkat lunak sumber terbuka yang dilisensikan di bawah Lisensi MIT. Lihat berkas LICENSE untuk informasi lebih lanjut.
+- **Admin**:
+- Log in with admin credentials.
+- Access the admin stock manager page.
+- Perform CRUD (Create, Read, Update, Delete) operations on products:
+ - Create new products.
+ - Read existing products.
+ - Update product details.
+ - Delete products.
+
+## 7. Contributing
+Contributions to the Mini E-Commerce (ClickCommerce) application are welcome. If you encounter any issues or have suggestions for improvements, please submit them as GitHub issues in the repository. Feel free to fork the repository and create pull requests for new features or bug fixes.
+
+## 8. License
+The Mini E-Commerce (ClickCommerce) application is open-source software licensed under the [MIT License](https://opensource.org/licenses/MIT). See the [LICENSE](LICENSE) file for more information.
